@@ -56,15 +56,13 @@ main {
 .container2 {
     display: flex;
     align-items: center;
-    /* padding-top: 50px; */
     justify-content: space-around;
+    gap: 220px;
 }
 
 .maps {
-    /* display: flex; */
     align-items: center;
     justify-content: space-around;
-    gap: 600px;
     margin-top: 100px;
     padding-bottom: 50px;
 }
@@ -75,6 +73,7 @@ main {
 
 .video {
     padding-top: 70px;
+    margin-right: 20px;
 }
 
 footer {
@@ -154,4 +153,5 @@ footer p {
         width: 260px;
         height: 180px;
     }
+
 }
