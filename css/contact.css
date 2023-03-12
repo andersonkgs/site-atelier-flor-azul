@@ -1,0 +1,160 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #B8DEED;
+    padding: 20px 0;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+}
+
+nav {
+    display: flex;
+    gap: 300px;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+nav a:hover {
+    border-bottom: 1px solid #000000;
+}
+
+main {
+    height: 80vh;
+    color: #ffffff;
+    background-color: #99734b;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    justify-content: space-around;
+}
+
+table, th, td {
+    padding: 10px;
+    text-align: center;
+    border: 5px solid #B8DEED;
+    border-collapse: collapse;
+}
+
+.social-midia {
+    height: 180px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 10px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.social-midia a {
+    padding: 20px;
+}
+
+.contact-message {
+    width: 300px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #B8DEED;
+    border-radius: 10px;
+    background-color: #99734b;
+}
+
+form fieldset {
+    border: 0;
+    margin: 10px;
+}
+
+form fieldset label, input, textarea {
+    display: block;
+    width: 100%;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.submit {
+    width: 80px;
+    padding: 5px;
+    border: 0;
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: #B8DEED;
+}
+
+#submit-contact {
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #B8DEED;
+    padding-top: 10px;
+}
+
+footer img {
+    height: 80px;
+    width: 80px;
+}
+
+footer p {
+    text-align: center;
+    color: #000000;
+}
+
+.brand-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 321px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    nav a {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    main {
+        height: 92vh;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+    
+    .social-midia {
+        padding-bottom: 50px;
+    }
+}

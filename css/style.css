@@ -1,0 +1,157 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #B8DEED;
+    padding: 20px 0;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+}
+
+nav {
+    display: flex;
+    gap: 300px;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+nav a:hover {
+    border-bottom: 1px solid #000000;
+}
+
+main {
+    color: #ffffff;
+    background-color: #99734b;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    justify-content: space-around;
+}
+
+.about p {
+    padding-top: 20px;
+}
+
+.sale img {
+    width: 700px;
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    /* padding-top: 50px; */
+    justify-content: space-around;
+}
+
+.maps {
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-around;
+    gap: 600px;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+
+.maps iframe {
+    width: 700px;
+}
+
+.video {
+    padding-top: 70px;
+}
+
+footer {
+    background-color: #B8DEED;
+    padding-top: 10px;
+}
+
+footer img {
+    height: 80px;
+    width: 80px;
+}
+
+footer p {
+    text-align: center;
+    color: #000000;
+}
+
+.brand-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 321px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    nav a {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    main {
+        height: 140vh;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .about {
+        padding: 30px;
+    }
+
+    .sale img {
+        width: 310px;
+        padding-left: 10px;             
+    }
+
+    .sale p {
+        padding: 10px 30px;
+    }
+
+    .container2 {
+        flex-direction: column-reverse;
+    }
+
+    .video iframe {
+        width: 260px;
+        height: 180px;
+    }
+
+    .maps h3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .maps iframe {
+        width: 260px;
+        height: 180px;
+    }
+}
