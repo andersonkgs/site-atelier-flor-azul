@@ -137,6 +137,7 @@ footer p {
 
     .container2 {
         flex-direction: column-reverse;
+        gap: 0;
     }
 
     .video iframe {
