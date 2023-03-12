@@ -140,9 +140,14 @@ footer p {
         gap: 0;
     }
 
+    .video {
+        margin-right: 0;
+    }
+
     .video iframe {
         width: 260px;
         height: 180px;
+        margin-right: 0;
     }
 
     .maps h3 {
