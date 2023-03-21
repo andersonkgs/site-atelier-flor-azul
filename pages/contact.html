@@ -58,24 +58,24 @@
             </div>
             <div class="contact-message">
                 <strong>Contato:</strong>
-                <form action="">
+                <form onsubmit="event.preventDefault()">
                     <fieldset>
                         <label for="input-name">Nome:</label>
-                        <input type="text" name="input-name" id="input-name" title="Escreva seu nome completo, por favor.">
+                        <input type="text" name="input-name" id="input-name" required minlength="2" placeholder="Escreva seu nome completo, por favor.">
                     </fieldset>
                     <fieldset>
                         <label for="input-email">E-mail:</label>
-                        <input type="email" name="input-email" id="input-email" title="Escreva seu e-mail, por favor.">
+                        <input type="email" name="input-email" id="input-email" required placeholder="Escreva seu e-mail, por favor.">
                     </fieldset>
                     <fieldset>
-                        <label for="input-phone">Telefone:</label>
-                        <input type="tel" name="input-phone" id="input-phone" title="Escreva seu número de telefone com DDD, por favor.">
+                        <label for="input-tel">Telefone:</label>
+                        <input type="tel" name="input-tel" id="input-tel" placeholder="(99) 99999-9999" required pattern="^\(\d{2}\) \d{5}-\d{4}$" maxlength="15">
                     </fieldset>
                     <fieldset>
                         <label for="input-msg">Seu recado ou seu pedido:</label>
-                        <textarea name="input-msg" id="input-msg" cols="50" rows="10" title="Escreva seu recado ou pedido bem detalhado, por favor."></textarea>
+                        <textarea name="input-msg" id="input-msg" cols="50" rows="10" placeholder="Escreva seu recado ou pedido bem detalhado, por favor."></textarea>
                     </fieldset>
-                    <input class="submit" id="submit-contact" type="submit" value="ENVIAR">
+                    <input class="submit" id="submit-contact" type="submit" value="ENVIAR" onclick="enviarFormulario()">
                 </form>
             </div>
         </section>
@@ -86,5 +86,6 @@
         </div>
         <p>2023 © Anderson Silva Dev. Todos os Direitos Reservados.</p>
     </footer>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>

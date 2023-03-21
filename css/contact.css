@@ -108,6 +108,10 @@ a {
     margin: 0 auto;
 }
 
+.invalid {
+    border: 2px solid red;
+}
+
 footer {
     background-color: #B8DEED;
     padding-top: 10px;
